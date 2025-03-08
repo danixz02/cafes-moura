@@ -1,0 +1,134 @@
+@media (max-width: 768px) {
+  /* Seções */
+  section {
+    padding: 20px 10px;
+  }
+
+  /* Container principal */
+  .container {
+    padding-top: 2rem;
+    flex-direction: column;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+  .container p {
+    width: 100%;
+  }
+
+  /* Imagem */
+  .imgCoffee {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Botão explorar */
+  .explorarBtn {
+    width: 100%;
+    max-width: 222px;
+  }
+
+  /* Faixa */
+  .faixa {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Títulos de seção */
+  .prodCoffees h1 {
+    font-size: 1.5rem;
+  }
+  .acessorios h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Container de cards */
+  .card-conteiner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Cards */
+  .card {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 16px;
+  }
+  .card h2 {
+    font-size: 1.2em;
+  }
+  .valorReal {
+    font-size: 1.5rem;
+  }
+
+  /* Explorar coleção */
+  .explorarPro #colecao {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.burger.toggle div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.burger.toggle div:nth-child(2) {
+  opacity: 0;
+}
+.burger.toggle div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* Responsividade e Animação do Menu Mobile            
+    */
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  /* Quando o menu está ativo, ele desliza para baixo e fica visível */
+  .menu.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto; /* Permite clique quando aberto */
+  }
+
+  /* Ajuste dos itens do menu no mobile (empilhados) */
+  .menu li {
+    border: none;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .menu li:hover {
+    background-color: var(--main-color);
+    border: none;
+    color: #ffffff;
+
+  }
+}

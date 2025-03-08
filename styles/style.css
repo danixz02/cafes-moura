@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 4rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: #ee2525;
+  --second-color: #fcca66;
+  --text-color: #fff;
+  --bg-color: #1e1c2a;
+  --hover-color: #470909;
+  /* sombra */
+  --box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 50px 100px;
+}
+
+/* img */
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 6rem;
+  background-color: #ffffff;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.103);
+  padding: 0 4rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+  height: 100px;
+}
+
+/* Menu de navegação (desktop) */
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Links do menu */
+.menu li a {
+  color: var(--bg-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s all linear;
+}
+
+.menu li {
+  border: 2px solid transparent;
+  padding: 8px;
+  transition: 0.3s all linear;
+}
+
+.menu li:hover {
+  border-bottom: 2px solid var(--main-color);
+}
+
+/* Botão hamburger (inicialmente oculto) */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--bg-color);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+
+/* Section inicio */
+
+.container {
+  padding-top: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container h1 {
+  font-weight: 700;
+  font-size: 7rem;
+  color: var(--bg-color);
+}
+
+.container p {
+  width: 70%;
+}
+
+.imgCoffee {
+  float: right;
+  width: 90%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.explorarBtn {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 1.3rem;
+  text-align: center;
+  width: 222px;
+  padding: 16px;
+  border-radius: 45px;
+  transition: .3s all linear;
+}
+
+.explorarBtn:hover {
+  transition: .3s all linear;
+  background-color: var(--hover-color);
+}
+
+/* Faixa */
+.faixa {
+  margin-top: 90px;
+  margin-bottom: 3rem;
+}
+
+/* cafés */
+
+.prodCoffees h1 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+
+/* Cards dos cafés */
+
+.card-conteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.valor {
+  margin-top: 1.4rem;
+}
+
+
+.valorReal {
+  font-size: 2rem;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.card {
+  width: 400px;
+  border-radius: 8px;
+  padding: 26px;
+  margin: 16px;
+  box-shadow: var(--box-shadow);
+  border: 0.3px solid transparent;
+  transition: transform 0.3s, border 0.3s;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border: 0.3px solid var(--main-color);
+  z-index: 10;
+}
+
+.card img {
+  border-radius: 4px;
+}
+
+.card h2 {
+  margin-top: 12px;
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+.card ul {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.card li {
+  margin-bottom: 3px;
+}
+
+.btn{
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover{
+  background-color: var(--hover-color);
+}
+
+/* Explorar */
+
+.explorarPro {
+  margin-top: 5rem;
+  padding: 26px;
+}
+
+
+.explorarPro #colecao {
+  position: relative;
+  display: flex;
+  top: -10rem;
+  left: 3rem;
+}
+
+#colecao {
+  display: flex;
+  justify-content: center;
+  width: 198px;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  background-color: var(--main-color);
+  border-radius: 12px;
+  padding: 12px;
+  transition: .3s all linear;
+}
+
+#colecao:hover {
+  transition: .3s all linear;
+  background-color: #1e1c2a;
+}
+
+/* acessorios */
+
+.acessorios h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
