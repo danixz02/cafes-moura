@@ -99,6 +99,10 @@ img {
   justify-content: space-between;
 }
 
+.content img {
+  width: 50%;
+}
+
 .container h1 {
   font-weight: 700;
   font-size: 7rem;
@@ -107,6 +111,7 @@ img {
 
 .container p {
   width: 70%;
+  margin-top: 2rem;
 }
 
 .imgCoffee {
@@ -117,13 +122,14 @@ img {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 15px;
 }
 
 .explorarBtn {
   background-color: var(--main-color);
   color: var(--text-color);
   font-size: 1.3rem;
+  margin-top: 2rem;
   text-align: center;
   width: 222px;
   padding: 16px;
@@ -138,6 +144,12 @@ img {
 
 /* Faixa */
 .faixa {
+  background-image: url('../assets/faixa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 12rem;
   margin-top: 90px;
   margin-bottom: 3rem;
 }
@@ -228,15 +240,19 @@ img {
 /* Explorar */
 
 .explorarPro {
-  margin-top: 5rem;
-  padding: 26px;
+  background-image: url('../assets/img111.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45vh;
+  margin: 35px;
 }
 
 
 .explorarPro #colecao {
   position: relative;
   display: flex;
-  top: -10rem;
+  top: 15rem;
   left: 3rem;
 }
 
