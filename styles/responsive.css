@@ -105,13 +105,14 @@
 /* Responsividade e Animação do Menu Mobile            
     */
 @media screen and (max-width: 768px) {
-
   .navbar {
-    padding: 0 20px;
+    padding: 0 2rem;
+    position: fixed;
+    top: -1px;
   }
 
   .logo img {
-    height: 60px;
+    width: 10rem;
   }
 
   .burger {
