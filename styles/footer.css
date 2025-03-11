@@ -83,6 +83,10 @@ footer {
       .footer-right {
         text-align: center;
       }
+
+      .footer-right li {
+        margin: 15px;
+      }
     }
     
     @media (max-width: 480px) {

@@ -102,8 +102,7 @@
 }
 
 
-/* Responsividade e Animação do Menu Mobile            
-    */
+/* Responsividade e Animação do Menu Mobile */
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 0 2rem;
@@ -132,11 +131,11 @@
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     pointer-events: none;
   }
-  /* Quando o menu está ativo, ele desliza para baixo e fica visível */
+
   .menu.active {
     transform: translateX(0);
     opacity: 1;
-    pointer-events: auto; /* Permite clique quando aberto */
+    pointer-events: auto; 
   }
 
   /* Ajuste dos itens do menu no mobile (empilhados) */
@@ -153,7 +152,6 @@
 
   }
 }
-
 
 
 @media (max-width: 768px) {
@@ -199,7 +197,6 @@
 
 }
 
-
 /* ============== Media Queries para Responsividade ============== */
 @media (max-width: 768px) {
   /* Ajusta a posição e tamanho do ícone do carrinho */
@@ -209,8 +206,8 @@
     margin-right: 10px;
   }
   .carrinho-icon img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
 
   /* Ajusta o modal e seu conteúdo */
