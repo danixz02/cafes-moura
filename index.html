@@ -6,6 +6,12 @@
     <link rel="shortcut icon" href="assets/logo-icon.svg" type="image/x-icon" />
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/cafés.css" />
+    <link rel="stylesheet" href="styles/explorar.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/sobre.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/modalCompras.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
     <title>Cafeteria Moura</title>
   </head>
@@ -13,7 +19,7 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img src="assets/logo.svg" alt="Logo">
+          <img src="assets/logo.svg" alt="Logo" />
         </div>
         <!-- Botão do menu hambúrguer -->
         <div class="burger" id="burger">
@@ -25,37 +31,64 @@
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#acessorios">Acessorios</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-      </nav>
     </header>
+
+    <div class="carrinho-icon" id="carrinho-icon">
+      <img src="assets/shopping-cart.svg" alt="Carrinho" />
+      <span id="badge" class="badge">0</span>
+    </div>
+  </nav>
+
+    <!-- Modal do Carrinho -->
+<div id="modal-carrinho" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" id="fechar-modal">&times;</span>
+    <h2>Carrinho de Compras</h2>
+    <ul id="carrinho-itens-modal">
+    </ul>
+    <hr style="margin-top: 23px; margin-bottom: 23px;">
+    <div class="finalizarCompra">
+      <p><strong>Total:</strong> R$ <span id="total-preco-modal">0.00</span></p>
+      <button id="finalizarCompraBtn">Finalizar Compra</button>
+    </div>
+  
+  </div>
+</div>
+
+<!-- Notificação de item adicionado -->
+<div id="toast" class="toast">Item adicionado ao carrinho!</div>
+
+
 
     <section class="container">
       <div class="content">
         <p>Seja bem vindo aos Cafés</p>
-        <img src="assets/Ativo 1.svg" alt="">
+        <img src="assets/Ativo 1.svg" alt="" />
         <p>
-          Cafés Moura oferece grãos premium, torrados e moídos sob demanda, garantindo frescor e sabor únicos a cada xícara.
+          Cafés Moura oferece grãos premium, torrados e moídos sob demanda,
+          garantindo frescor e sabor únicos a cada xícara.
         </p>
 
-        <a href="" class="explorarBtn">Explorar Produtos</a>
+        <a href="#produtos" class="explorarBtn">Explorar Produtos</a>
       </div>
       <div class="imgCoffee">
         <img src="assets/header.png" alt="" />
       </div>
     </section>
 
-  
     <div class="faixa"></div>
 
-    <section class="prodCoffees">
+    <section class="prodCoffees" id="produtos">
       <h1>Explore nossa coleção de cafés</h1>
 
       <div class="card-conteiner">
         <div class="card">
-          <img src="assets/coffee-1.jpg" alt="">
+          <img src="assets/coffee-1.jpg" alt="" />
           <div class="infos">
-            <h2>Geisha</h2>
+            <h2>Café Geisha</h2>
             <ul>
               <li>- Café em Grãos</li>
               <li>- Torra: Média</li>
@@ -66,14 +99,14 @@
               <p class="valorReal">R$ 52,22</p>
             </div>
 
-              <button class="btn">Adicionar ao Carrinho</button>
+            <button class="btn">Adicionar ao Carrinho</button>
           </div>
         </div>
 
         <div class="card">
-          <img src="assets/coffee-2.jpg" alt="">
+          <img src="assets/coffee-2.jpg" alt="" />
           <div class="infos">
-            <h2>Kopi luwak</h2>
+            <h2>Café Kopi luwak</h2>
             <ul>
               <li>- Café em Grãos</li>
               <li>- Torra: Média (Chocolate)</li>
@@ -83,15 +116,15 @@
             <div class="valor">
               <p class="valorReal">R$ 62,00</p>
             </div>
-            
+
             <button class="btn">Adicionar ao Carrinho</button>
           </div>
         </div>
 
         <div class="card">
-          <img src="assets/coffee-3.jpg" alt="">
+          <img src="assets/coffee-3.jpg" alt="" />
           <div class="infos">
-            <h2>Hoshino</h2>
+            <h2>Café Hoshino</h2>
             <ul>
               <li>- Café em Grãos</li>
               <li>- Torra: Clara - Média</li>
@@ -106,18 +139,47 @@
           </div>
         </div>
       </div>
-      
     </section>
     <div class="explorarPro">
       <div class="imgExp"></div>
       <a id="colecao" href="">Ver Coleção</a>
     </div>
 
-    <section class="acessorios">
+    <section class="sobre" id="sobre">
+      <h1>Sobre</h1>
+      <div class="contentSobre">
+        <p>
+          A Cafés Moura nasceu da paixão pelo café e do compromisso com a
+          qualidade. Nossa história começou com a busca incessante pelos
+          melhores grãos, aliados a um processo de torra artesanal, que realça o
+          sabor e aroma de cada lote. <br>
+
+          Diferente das grandes produções em massa, trabalhamos sob demanda, 
+          garantindo que cada café seja torrado e moído somente após o pedido. <br><br>
+
+          Isso significa que nossos clientes recebem um café sempre fresco, 
+          com notas aromáticas intensas e sabor equilibrado. <br><br>
+
+          Acreditamos que o café vai muito além de uma bebida — ele é uma
+          experiência, um ritual e um momento de conexão. <br><br>
+          
+          Por isso, selecionamos cuidadosamente cada grão e utilizamos processos 
+          que respeitam sua origem e autenticidade. Seja para o dia a dia ou para momentos
+          especiais, a Cafés Moura está aqui para levar até você um café que une
+          tradição, frescor e qualidade incomparável.
+        </p>
+
+        <div class="imgSobre">
+          <img src="assets/ABOUT.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="acessorios" id="acessorios">
       <h1>Produtos Especiais</h1>
       <div class="card-conteiner">
         <div class="card">
-          <img src="assets/cup-coffee.jpg" alt="">
+          <img src="assets/cup-coffee.jpg" alt="" />
           <div class="infos">
             <h2>Copo Térmico de Isopor</h2>
             <ul>
@@ -134,7 +196,10 @@
         </div>
 
         <div class="card">
-          <img src="assets/Moka_G (1).jpg" alt="" style="width: 80%; position: relative; left: 40px;">
+          <img
+            src="assets/Moka.jpg"
+            alt=""
+          />
           <div class="infos">
             <h2>Cafeteria Italiana - Moka</h2>
             <ul>
@@ -152,7 +217,28 @@
       </div>
     </section>
 
+
+    <footer  id="contato">
+      <div class="footer-left">
+        <img src="./assets/logo.svg" alt="Nexify Logo" />
+      </div>
+      <div class="footer-center">
+        <h3>EXPLORE</h3>
+        <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+      </div>
+      <div class="footer-right">
+        <li><a href="#acessorios">Acessorios</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      Cafés Moura – Todos os direitos reservados – 2025
+    </div>
+    
+
     <!-- JS -->
-     <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

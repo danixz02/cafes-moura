@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <link rel="stylesheet" href="../styles/pagamento.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pedido">
+            <h2>Resumo da Compra</h2>
+            <ul id="lista-carrinho"></ul>
+        </div>
+
+        <div class="formasPagamento">
+            <h2>Formas de Pagamento</h2>
+
+            <label class="switch-container">
+                <span>Cartão de Crédito</span>
+                <label class="switch">
+                    <input type="checkbox" name="pagamento" value="cartao">
+                    <span class="slider"></span>
+                </label>
+            </label>
+
+            <label class="switch-container">
+                <span>Pix</span>
+                <label class="switch">
+                    <input type="checkbox" name="pagamento" value="pix">
+                    <span class="slider"></span>
+                </label>
+            </label>
+
+            <label class="switch-container">
+                <span>Boleto Bancário</span>
+                <label class="switch">
+                    <input type="checkbox" name="pagamento" value="boleto">
+                    <span class="slider"></span>
+                </label>
+            </label>
+
+            <hr>
+            <h3 id="total-compra"></h3>
+            <button id="confirmarPagamento" onclick="comprar()">Confirmar Pagamento</button>
+            <a href="../index.html">Voltar</a>
+        </div>
+    </div>
+
+    <script src="../scripts/pagamento.js"></script>
+</body>
+</html>

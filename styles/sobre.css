@@ -1,0 +1,31 @@
+.sobre h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-top: 2rem;
+}
+
+.contentSobre {
+  display: flex;
+  align-items: center;
+}
+
+.contentSobre P {
+  display: flex;
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 48rem;
+  margin-top: 1rem;
+  margin-right: 1.7rem;
+  text-align: justify;
+}
+
+.contentSobre img {
+  width: 30rem;
+  height: 37rem;
+  border-radius: 12px;
+
+  -webkit-box-shadow: 9px 8px 0px 5px rgba(238, 37, 37, 1);
+  -moz-box-shadow: 9px 8px 0px 5px rgba(238, 37, 37, 1);
+  box-shadow: 9px 8px 0px 5px rgba(238, 37, 37, 1);
+}

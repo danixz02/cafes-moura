@@ -1,0 +1,33 @@
+.explorarPro {
+    background-image: url('../assets/img111.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+    margin: 35px;
+  }
+  
+  
+  .explorarPro #colecao {
+    position: relative;
+    display: flex;
+    top: 15rem;
+    left: 3rem;
+  }
+  
+  #colecao {
+    display: flex;
+    justify-content: center;
+    width: 198px;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+    border-radius: 12px;
+    padding: 12px;
+    transition: .3s all linear;
+  }
+  
+  #colecao:hover {
+    transition: .3s all linear;
+    background-color: #1e1c2a;
+  }
