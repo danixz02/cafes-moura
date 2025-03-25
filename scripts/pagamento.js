@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Por favor, selecione uma opção de pagamento!");
       return;
     }
-    // Se uma opção foi selecionada, a compra é concluída
+      
     comprar();
 
     function comprar() {
