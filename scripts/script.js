@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Finalizar compra - Salva itens no localStorage e redireciona para a página de pagamento
+  // Finalizar compra + Página de checkout
   function finalizarCompra() {
     const itensCarrinho = [];
     document.querySelectorAll("#carrinho-itens-modal li").forEach((item) => {
@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("carrinho", JSON.stringify(itensCarrinho));
     localStorage.setItem("total", total.toFixed(2));
 
-    // Redirecionar para a página de pagamento
     window.location.href = "../pages/pagamento.html";
   }
 
@@ -90,17 +89,15 @@ document.addEventListener("DOMContentLoaded", function () {
     btnFinalizarCompra.addEventListener("click", finalizarCompra);
   }
 
-  // Abre o modal quando clicar no ícone do carrinho
   carrinhoIcon.addEventListener("click", function () {
     modalCarrinho.style.display = "block";
   });
 
-  // Fecha o modal quando clicar no "X"
+  // Fecha o modal
   fecharModal.addEventListener("click", function () {
     modalCarrinho.style.display = "none";
   });
 
-  // Fecha o modal clicando fora dele
   window.addEventListener("click", function (event) {
     if (event.target === modalCarrinho) {
       modalCarrinho.style.display = "none";
